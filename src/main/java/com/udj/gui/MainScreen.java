@@ -9,17 +9,18 @@ public class MainScreen extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
-        BGPanel = new com.udj.gui.GradientPanel();
+        BGPanel = new com.udj.gui.components.Background();
         StudentC = new javax.swing.JLabel();
         TeacherC = new javax.swing.JLabel();
         AdminC = new javax.swing.JLabel();
+        AboutUDJC = new javax.swing.JLabel();
         BGLabel = new javax.swing.JLabel();
-        StudentC1 = new javax.swing.JLabel();
-        TeacherC1 = new javax.swing.JLabel();
-        AdminC1 = new javax.swing.JLabel();
+        AdminC1 = new com.udj.gui.components.ButtonLabelBG();
+        StudentC1 = new com.udj.gui.components.ButtonLabelBG();
+        TeacherC1 = new com.udj.gui.components.ButtonLabelBG();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -69,9 +70,22 @@ public class MainScreen extends javax.swing.JFrame {
         });
         BGPanel.add(AdminC, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 355, 230, 60));
 
+        AboutUDJC.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        AboutUDJC.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AboutUDJCMouseClicked(evt);
+            }
+        });
+        BGPanel.add(AboutUDJC, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 10, 140, 30));
+
         BGLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/MainScreen.png"))); // NOI18N
         BGLabel.setMaximumSize(new java.awt.Dimension(2000, 1200));
         BGPanel.add(BGLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 600));
+
+        AdminC1.setBackground(new java.awt.Color(255, 255, 255));
+        AdminC1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AdminC1.png"))); // NOI18N
+        AdminC1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BGPanel.add(AdminC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 353, -1, 68));
 
         StudentC1.setBackground(new java.awt.Color(255, 255, 255));
         StudentC1.setForeground(new java.awt.Color(255, 255, 255));
@@ -84,63 +98,63 @@ public class MainScreen extends javax.swing.JFrame {
         TeacherC1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         BGPanel.add(TeacherC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 273, 330, 80));
 
-        AdminC1.setBackground(new java.awt.Color(255, 255, 255));
-        AdminC1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/AdminC1.png"))); // NOI18N
-        AdminC1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        BGPanel.add(AdminC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 351, -1, 70));
-
         getContentPane().add(BGPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void StudentCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StudentCMouseClicked
+    private void StudentCMouseClicked(java.awt.event.MouseEvent evt) {                                      
         StudentC1.setOpaque(true);
         java.awt.EventQueue.invokeLater(() -> new StudentLogin().setVisible(true));
-    }//GEN-LAST:event_StudentCMouseClicked
+    }                                     
 
-    private void StudentCMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StudentCMouseEntered
+    private void StudentCMouseEntered(java.awt.event.MouseEvent evt) {                                      
         StudentC1.setOpaque(true);
         StudentC1.repaint();
-    }//GEN-LAST:event_StudentCMouseEntered
+    }                                     
 
-    private void StudentCMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StudentCMouseExited
+    private void StudentCMouseExited(java.awt.event.MouseEvent evt) {                                     
         StudentC1.setOpaque(false);
         StudentC1.getParent().repaint();
-    }//GEN-LAST:event_StudentCMouseExited
+    }                                    
 
-    private void TeacherCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TeacherCMouseClicked
+    private void TeacherCMouseClicked(java.awt.event.MouseEvent evt) {                                      
         TeacherC1.setOpaque(true);
         java.awt.EventQueue.invokeLater(() -> new TeacherLogin().setVisible(true));
-    }//GEN-LAST:event_TeacherCMouseClicked
+    }                                     
 
-    private void TeacherCMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TeacherCMouseEntered
+    private void TeacherCMouseEntered(java.awt.event.MouseEvent evt) {                                      
         TeacherC1.setOpaque(true);
         TeacherC1.repaint();
-    }//GEN-LAST:event_TeacherCMouseEntered
+    }                                     
 
-    private void TeacherCMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TeacherCMouseExited
+    private void TeacherCMouseExited(java.awt.event.MouseEvent evt) {                                     
         TeacherC1.setOpaque(false);
         TeacherC1.getParent().repaint();
-    }//GEN-LAST:event_TeacherCMouseExited
+    }                                    
 
-    private void AdminCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdminCMouseClicked
+    private void AdminCMouseClicked(java.awt.event.MouseEvent evt) {                                    
         AdminC1.setOpaque(true);
         java.awt.EventQueue.invokeLater(() -> new AdminLogin().setVisible(true));
-    }//GEN-LAST:event_AdminCMouseClicked
+    }                                   
 
-    private void AdminCMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdminCMouseEntered
+    private void AdminCMouseEntered(java.awt.event.MouseEvent evt) {                                    
         AdminC1.setOpaque(true);
         AdminC1.repaint();
-    }//GEN-LAST:event_AdminCMouseEntered
+    }                                   
 
-    private void AdminCMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AdminCMouseExited
+    private void AdminCMouseExited(java.awt.event.MouseEvent evt) {                                   
         AdminC1.setOpaque(false);
         AdminC1.getParent().repaint();
-    }//GEN-LAST:event_AdminCMouseExited
+    }                                  
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private void AboutUDJCMouseClicked(java.awt.event.MouseEvent evt) {                                       
+        java.awt.EventQueue.invokeLater(() -> new AboutUDJ().setVisible(true));
+    }                                      
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JLabel AboutUDJC;
     private javax.swing.JLabel AdminC;
     private javax.swing.JLabel AdminC1;
     private javax.swing.JLabel BGLabel;
@@ -149,5 +163,5 @@ public class MainScreen extends javax.swing.JFrame {
     private javax.swing.JLabel StudentC1;
     private javax.swing.JLabel TeacherC;
     private javax.swing.JLabel TeacherC1;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
