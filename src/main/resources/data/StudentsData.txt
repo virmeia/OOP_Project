@@ -1,0 +1,27 @@
+UDJ-25-0001,May Tapacion Corto,Bachelor of Science in Information Technology,Computer Studies Department,College of Science,Second Year,Regular,corto.mayt@gmail.com,Caloocan City
+UDJ-25-0002,Amiel Riche Laurio Guteza,Bachelor of Science in Environmental Science,Chemistry Department,College of Science,Third Year,Regular,amielguteza@gmail.com,Manila City
+UDJ-25-0003,Alpha Bravo Charlie,Bachelor of Science in Civil Engineering,Engineering Department,College of Engineering,Third Year,Regular,alpha@gmail.com,Pasig City
+UDJ-25-0004,Joveylaine Pimentel De Guzman,Bachelor of Science in Hospitality Management,Entrepreneurship and Management Department,College of Liberal Arts,First Year,Regular,joveylaine@gmail.com,Makati City
+UDJ-25-0005,Charlie Delta Europe,Bachelor of Science in Mechanical Engineering,Engineering Department,College of Engineering,Fourth Year,Irregular,cde@gmail.com,Taguig City
+UDJ-25-0006,Elaiza Mae Perdiz Bayani,Bachelor of Science in Entrepreneurship Management,Entrepreneurship and Management Department,College of Liberal Arts,Second Year,Regular,elaiza@gmail.com,Manila City
+UDJ-25-0007,Aaron James Santos,Bachelor of Science in Information Technology,Computer Studies Department,College of Science,First Year,Regular,ajs@gmail.com,Caloocan City
+UDJ-25-0008,Beatriz Anne Lopez,Bachelor of Science in Civil Engineering,Engineering Department,College of Engineering,Second Year,Regular,balasd@gmail.com,Quezon City
+UDJ-25-0009,Carlo Miguel Cruz,Bachelor of Science in Entrepreneurship Management,Entrepreneurship and Management Department,College of Liberal Arts,Third Year,Regular,cmc@gmail.com,Manila
+UDJ-25-0010,Diana Rose Reyes,Bachelor of Science in Computer Science,Computer Studies Department,College of Science,Fourth Year,Irregular,drr@gmail.com,Makati City
+UDJ-25-0011,Ethan Paul Garcia,Bachelor of Science in Mechanical Engineering,Engineering Department,College of Engineering,First Year,Regular,epg@gmail.com,Pasig City
+UDJ-25-0012,Fiona Mae Dizon,Bachelor of Science in Hospitality Management,Entrepreneurship and Management Department,College of Liberal Arts,Second Year,Irregular,fmd@gmail.com,Mandaluyong City
+UDJ-25-0013,Gabriel John Lim,Bachelor of Science in Electronics Engineering,Engineering Department,College of Engineering,Third Year,Regular,gjl@gmail.com,Taguig City
+UDJ-25-0014,Hannah Grace Tan,Bachelor of Applied Science in Laboratory Technology,Chemistry Department,College of Science,Fourth Year,Regular,hgt@gmail.com,Valenzuela City
+UDJ-25-0015,Ian Patrick Go,Bachelor of Science in Electrical Engineering,Engineering Department,College of Engineering,First Year,Irregular,ipg@gmail.com,Marikina City
+UDJ-25-0016,Julia Marie Yap,Bachelor of Arts in Management major in Industrial Management,Entrepreneurship and Management Department,College of Liberal Arts,Second Year,Regular,jmy@gmail.com,San Juan City
+UDJ-25-0017,Kevin Ray Torres,Bachelor of Science in Information System,Computer Studies Department,College of Science,Third Year,Regular,krt@gmail.com,Pasay City
+UDJ-25-0018,Lara Jean Ramos,Bachelor of Science in Environmental Science,Chemistry Department,College of Science,Fourth Year,Regular,ljr@gmail.com,Las Pinas City
+UDJ-25-0019,Mark Anthony Chua,Bachelor of Science in Civil Engineering,Engineering Department,College of Engineering,First Year,Regular,mac@gmail.com,Paranaque City
+UDJ-25-0020,Nina Isabel Flores,Bachelor of Science in Information Technology,Computer Studies Department,College of Science,Second Year,Irregular,nif@gmail.com,Muntinlupa City
+UDJ-25-0021,Oliver Seth Diaz,Bachelor of Science in Mechanical Engineering,Engineering Department,College of Engineering,Third Year,Regular,osd@gmail.com,Malabon City
+UDJ-25-0022,Patricia Anne Lee,Bachelor of Science in Hospitality Management,Entrepreneurship and Management Department,College of Liberal Arts,Fourth Year,Regular,pal@gmail.com,Navotas City
+UDJ-25-0023,Quinn Victor Ocampo,Bachelor of Science in Computer Science,Computer Studies Department,College of Science,First Year,Regular,qvo@gmail.com,Pateros
+UDJ-25-0024,Rafael Luis Gomez,Bachelor of Science in Electrical Engineering,Engineering Department,College of Engineering,Second Year,Regular,rlg@gmail.com,Caloocan City
+UDJ-25-0025,Sarah Jane Medina,Bachelor of Science in Entrepreneurship Management,Entrepreneurship and Management Department,College of Liberal Arts,Third Year,Irregular,sjm@gmail.com,Quezon City
+UDJ-25-0026,Timothy James Sy,Bachelor of Science in Electronics Engineering,Engineering Department,College of Engineering,Fourth Year,Regular,tjs@gmail.com,Manila
+UDJ-25-0028,Victor Emil Ruiz,Bachelor of Applied Science in Laboratory Technology,Chemistry Department,College of Science,Second Year,Regular,ver@gmail.com,Pasig City
