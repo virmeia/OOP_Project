@@ -3,7 +3,6 @@ package com.udj.gui;
 import javax.swing.*;
 import java.awt.*;
 import java.io.BufferedReader;
-//import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -18,7 +17,7 @@ public class AdminDB extends javax.swing.JFrame {
 
     public AdminDB() {
        initComponents();
-
+       
        updateDashboardData();
 
        cardLayout = new CardLayout();
@@ -47,7 +46,6 @@ public class AdminDB extends javax.swing.JFrame {
     private int countLinesInFile(String resourcePath) {
         int lineCount = 0;
         
-        // 1. Get the file as an InputStream from the ClassLoader
         try (java.io.InputStream is = AdminDB.class.getResourceAsStream(resourcePath)) {
             
             if (is == null) {
@@ -55,14 +53,12 @@ public class AdminDB extends javax.swing.JFrame {
                 return 0;
             }
 
-            // 2. Read the InputStream line by line using an InputStreamReader
             try (BufferedReader reader = new BufferedReader(new InputStreamReader(is))) {
                 while (reader.readLine() != null) {
                     lineCount++;
                 }
             }
         } catch (IOException e) {
-            // This catch block handles reading errors after the resource is successfully found
             logger.severe("Error reading resource " + resourcePath + ": " + e.getMessage());
             return 0;
         }
@@ -71,7 +67,7 @@ public class AdminDB extends javax.swing.JFrame {
 
     private void updateDashboardData() {
         int studentCount = countLinesInFile(STUDENTS_FILE);
-        int facultyCount = countLinesInFile(FACULTY_FILE); // <-- This is the file line count
+        int facultyCount = countLinesInFile(FACULTY_FILE);
         int courseCount = countLinesInFile(COURSES_FILE);
         
         TotalStudents.setText(String.valueOf(studentCount));
@@ -79,9 +75,7 @@ public class AdminDB extends javax.swing.JFrame {
         TotalCourses.setText(String.valueOf(courseCount));
     }
     
-
-    
-     public void showPanel(String name) {
+    public void showPanel(String name) {
         setMainNavigationVisible(false);
         contentPanel.setVisible(true);
         
@@ -93,7 +87,7 @@ public class AdminDB extends javax.swing.JFrame {
         contentPanel.revalidate();
         contentPanel.repaint();
     }
-    
+ 
     public void showDashboard() {
         contentPanel.setVisible(false);
         setMainNavigationVisible(true);
@@ -132,8 +126,8 @@ public class AdminDB extends javax.swing.JFrame {
         CoursesnCurriC1 = new javax.swing.JButton();
         SystemC1 = new javax.swing.JButton();
         TotalStudents = new javax.swing.JTextField();
-        TotalFaculty = new javax.swing.JTextField();
         TotalCourses = new javax.swing.JTextField();
+        TotalFaculty = new javax.swing.JTextField();
         AdminBG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -219,6 +213,8 @@ public class AdminDB extends javax.swing.JFrame {
         DashboardC1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/DashboardAdminC1.png"))); // NOI18N
         DashboardC1.setBorderPainted(false);
         DashboardC1.setContentAreaFilled(false);
+
+        DashboardC1.setVisible(false);
         BGPanel.add(DashboardC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 227, 160, 40));
 
         StudentC1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/StudentAdminC1.png"))); // NOI18N
@@ -244,36 +240,32 @@ public class AdminDB extends javax.swing.JFrame {
         SystemC1.setContentAreaFilled(false);
         BGPanel.add(SystemC1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 471, 160, 40));
 
-        TotalStudents.setEditable(false);
-        TotalStudents.setBackground(new java.awt.Color(185, 154, 202));
-        TotalStudents.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        TotalStudents.setForeground(new java.awt.Color(51, 0, 51));
+        TotalStudents.setBackground(new java.awt.Color(61, 31, 92));
+        TotalStudents.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        TotalStudents.setForeground(new java.awt.Color(255, 255, 255));
         TotalStudents.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TotalStudents.setText("jTextField1");
         TotalStudents.setBorder(null);
-        TotalStudents.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        BGPanel.add(TotalStudents, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 410, 53, 18));
+        BGPanel.add(TotalStudents, new org.netbeans.lib.awtextra.AbsoluteConstraints(354, 431, 70, 25));
 
-        TotalFaculty.setBackground(new java.awt.Color(185, 154, 202));
-        TotalFaculty.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        TotalFaculty.setForeground(new java.awt.Color(51, 0, 51));
-        TotalFaculty.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        TotalFaculty.setBorder(null);
-        TotalFaculty.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        TotalFaculty.setEnabled(false);
-        TotalFaculty.setSelectionColor(new java.awt.Color(51, 0, 51));
-        TotalFaculty.addActionListener(this::TotalFacultyActionPerformed);
-        BGPanel.add(TotalFaculty, new org.netbeans.lib.awtextra.AbsoluteConstraints(805, 415, 53, 18));
-
-        TotalCourses.setBackground(new java.awt.Color(185, 154, 202));
-        TotalCourses.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        TotalCourses.setForeground(new java.awt.Color(51, 0, 51));
+        TotalCourses.setBackground(new java.awt.Color(61, 31, 92));
+        TotalCourses.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        TotalCourses.setForeground(new java.awt.Color(255, 255, 255));
         TotalCourses.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TotalCourses.setText("jTextField1");
         TotalCourses.setBorder(null);
-        TotalCourses.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        TotalCourses.setEnabled(false);
-        BGPanel.add(TotalCourses, new org.netbeans.lib.awtextra.AbsoluteConstraints(593, 415, 53, 18));
+        TotalCourses.addActionListener(this::TotalCoursesActionPerformed);
+        BGPanel.add(TotalCourses, new org.netbeans.lib.awtextra.AbsoluteConstraints(584, 432, 70, 25));
 
-        AdminBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Dashboard.png"))); // NOI18N
+        TotalFaculty.setBackground(new java.awt.Color(61, 31, 92));
+        TotalFaculty.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        TotalFaculty.setForeground(new java.awt.Color(255, 255, 255));
+        TotalFaculty.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TotalFaculty.setText("jTextField1");
+        TotalFaculty.setBorder(null);
+        BGPanel.add(TotalFaculty, new org.netbeans.lib.awtextra.AbsoluteConstraints(817, 432, 70, 25));
+
+        AdminBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ADBBG.png"))); // NOI18N
         BGPanel.add(AdminBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 600));
 
         getContentPane().add(BGPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 600));
@@ -294,11 +286,11 @@ public class AdminDB extends javax.swing.JFrame {
     }//GEN-LAST:event_StudentCMouseExited
 
     private void FacultyCMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FacultyCMouseClicked
-        showPanel("FACULTY_MANAGEMENT");
+       showPanel("FACULTY_MANAGEMENT");
     }//GEN-LAST:event_FacultyCMouseClicked
 
     private void FacultyCMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FacultyCMouseEntered
-        FacultyC1.setVisible(true);
+       FacultyC1.setVisible(true);
     }//GEN-LAST:event_FacultyCMouseEntered
 
     private void FacultyCMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FacultyCMouseExited
@@ -341,9 +333,9 @@ public class AdminDB extends javax.swing.JFrame {
         DashboardC1.setVisible(false);
     }//GEN-LAST:event_DashboardCMouseExited
 
-    private void TotalFacultyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalFacultyActionPerformed
+    private void TotalCoursesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TotalCoursesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TotalFacultyActionPerformed
+    }//GEN-LAST:event_TotalCoursesActionPerformed
 
     private void hideAllHighlights() {
         StudentC1.setVisible(false);
@@ -383,7 +375,7 @@ public class AdminDB extends javax.swing.JFrame {
     private javax.swing.JButton CoursesnCurriC;
     private javax.swing.JButton CoursesnCurriC1;
     private javax.swing.JButton DashboardC;
-    private javax.swing.JButton DashboardC1;
+    javax.swing.JButton DashboardC1;
     private javax.swing.JButton FacultyC;
     private javax.swing.JButton FacultyC1;
     private javax.swing.JButton StudentC;
